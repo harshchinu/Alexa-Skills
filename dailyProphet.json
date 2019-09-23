@@ -1,1 +1,232 @@
-
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hogwarts school",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Wand",
+                    "slots": [
+                        {
+                            "name": "Spellname",
+                            "type": "Spellname"
+                        }
+                    ],
+                    "samples": [
+                        "go {Spellname}",
+                        "Do {Spellname}",
+                        "Magic {Spellname}",
+                        "Wand {Spellname}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "Spellname",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Confundo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Legilimens"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dissendium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aguamenti"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Incendio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Reparo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diffindo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Relashio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Morsmordre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Unbreakable Vow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Petrificus Totalus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Protego"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Impedimenta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stupefy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Imperio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Revelio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Finestra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Protego Totalum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Homenum Revelio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Crucio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Riddikulus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Obliviate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sectumsempra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Avada Kedavra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Expecto Patronum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Expelliarmus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lumos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alohomora"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Accio"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "Wand",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Spellname",
+                            "type": "Spellname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.858171189018.479333758732.318298356022"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Slot.Validation.858171189018.479333758732.318298356022",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say {Spellname} again or Try Different Spell"
+                    }
+                ]
+            }
+        ]
+    }
+}
