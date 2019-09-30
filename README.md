@@ -1,18 +1,25 @@
 # Alexa-Skills
-Json code for all my alexa skills
+Here you can find the JSON code for all my alexa skills I have published.
 
-To check this is live search with name on amazom alexa skill store
+Find all these skills at Amazon Skills Store here [here](https://www.amazon.in/s?k=Harsh+maheshwari&i=alexa-skills&ref=nb_sb_noss)
 
 
-Talking Tom 
+
+### **Talking Tom** 🐱
+
   @talkingtom.json
-  it same like our Anrdoid Talking tom repeats what you say it to you
+  Talking Tom 🐱 Alexa skill is a remake of the Talking Tom Android app, where Alexa repeats whatever is said by the user.
 
-Daily Prophet
+### **Daily Prophet**
   @dailyProphet.json
-  all the potterheads out there this skill is for you
+  This Alexa Skill is for all the harry potter lovers aka Potterheads. 
   
-The Big Bang Theory
+### **The Big Bang Theory**
 
   @tbbt.json
-    its all the with a big bang Travia to you
+    An trivia Skill based on the popular TV Show, The Big Bang Theory 💣
+    
+    
+    
+    
+*More coming soon..
