@@ -22,4 +22,4 @@ Find all these skills at Amazon Skills Store here [here](https://www.amazon.in/s
     
     
     
-*More coming soon..
+*More coming soon..*
